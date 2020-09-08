@@ -1,10 +1,10 @@
 import Head from "next/head";
 
-export default () => (
+export default (props) => (
   <Head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charSet="utf-8" />
-    <title>Lenka Dusilová</title>
+    <title>Lenka Dusilová {props.title ? " — " + props.title : null}</title>
     <meta
       name="description"
       content="Žánrově nezařaditelná, charismatická zpěvačka, šestinásobná držitelka výročních hudebních cen Anděl, není zvyklá stagnovat a opakovat se. Stal se z ní mimořádný úkaz české hudební scény, kdy z pozice rockové a popové hvězdy putuje k osobnímu vyjádření, jež svobodně přijímá impulzy z nejrůznějších stylů a mimohudebních zážitků."
@@ -38,14 +38,25 @@ export default () => (
     <link
       rel="mask-icon"
       href="/static/favicon/safari-pinned-tab.svg"
-      color="#e0004a"
+      color="#56a6bd"
     />
     <link rel="shortcut icon" href="/static/favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#e0004a" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
     <meta
       name="msapplication-config"
       content="/static/favicon/browserconfig.xml"
     />
     <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="UTF-8"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+    />
   </Head>
 );

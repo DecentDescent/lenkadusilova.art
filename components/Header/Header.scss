@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.header {
+  width: 100%;
+  padding: 48px;
+  background: transparent;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  .header__logo {
+    a {
+      text-decoration: none;
+
+      &:hover {
+        svg {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    svg {
+      height: 42px;
+      transition: all 0.5s;
+
+      .logo__l {
+        fill: #fff;
+      }
+
+      .logo__d {
+        fill: #fff;
+      }
+    }
+  }
+}

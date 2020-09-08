@@ -1,15 +1,15 @@
 import Head from "../components/Head";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+import PageAbout from "../components/About";
 
 import "../styles/global.scss";
 
 const Index = () => {
   return (
     <main>
-      <Head />
+      <Head title="O Lence" />
       <Header />
-      <Hero />
+      <PageAbout />
     </main>
   );
 };

@@ -1,0 +1,132 @@
+@import "../../styles/variables";
+@import "../../styles/helpers";
+.concerts {
+  width: 100vw;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background: linear-gradient(
+      130deg,
+      rgba(69, 35, 75, 0.8) 0%,
+      rgba(25, 19, 80, 0.8) 100%
+    ),
+    url("/static/graphics/hero-concerts.jpg");
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.decoration {
+  position: fixed;
+  bottom: -20px;
+  right: -20px;
+  z-index: 1;
+
+  svg {
+    height: 15vh;
+    opacity: 0.05;
+  }
+}
+
+.concert {
+  display: grid;
+  width: 100%;
+  color: $color-white;
+  align-items: flex-start;
+  grid-template-columns: 120px auto 150px;
+  margin: 24px 0;
+  column-gap: 24px;
+
+  .concert__date {
+    width: auto;
+    flex-shrink: 0;
+    flex-grow: 0;
+    font-size: 18px;
+    color: $color-white;
+  }
+
+  .concert__description {
+    width: auto;
+    flex-shrink: 0;
+    flex-grow: 0;
+    font-size: 18px;
+    color: $color-white;
+
+    h2 {
+      font-weight: 800;
+    }
+
+    p {
+      margin: 12px 0 24px 0;
+    }
+  }
+
+  .concert__tickets {
+    width: auto;
+    flex-shrink: 0;
+    flex-grow: 0;
+    font-size: 18px;
+    color: $color-white;
+
+    button {
+      appearance: none;
+      border: 2px solid $color-aqua;
+      text-transform: uppercase;
+      background: transparent;
+      padding: 8px 12px;
+      color: $color-aqua;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.24s;
+
+      &:hover {
+        background: $color-aqua;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.concerts__navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0 32px 0;
+
+  a {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    svg {
+      width: 16px;
+    }
+  }
+
+  .arrow-disabled {
+    opacity: 0.2;
+  }
+
+  .circle--full,
+  .circle--empty {
+    width: 10px;
+    height: 10px;
+    border: 2px solid $color-aqua;
+    border-radius: 50%;
+    transition: all 0.24s;
+
+    &:hover {
+      background: $color-aqua;
+    }
+  }
+
+  .circle--full {
+    background: $color-aqua;
+  }
+}
