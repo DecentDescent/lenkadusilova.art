@@ -100,31 +100,32 @@
     }
 
     li {
-      text-align: center;
+      text-align: right;
       margin: 0;
       cursor: pointer;
 
       a {
-        font-size: 24px;
+        font-size: 32px;
         color: white;
         text-transform: uppercase;
         font-weight: bold;
-        letter-spacing: 10px;
+        letter-spacing: 7px;
         width: 100%;
-        padding: 24px;
+        padding: 24px 16px;
         display: block;
         box-sizing: border-box;
         transition: color 0.24s;
         text-decoration: none;
 
-        @media (max-width: 1024px) {
-          font-size: 22px;
-          letter-spacing: 8px;
+        @media (max-width: 1200px) {
+          font-size: 28px;
+          letter-spacing: 6px;
         }
 
         @media (max-width: 900px) {
-          font-size: 18px;
-          letter-spacing: 7px;
+          font-size: 21px;
+          letter-spacing: 5px;
+          text-align: center;
         }
 
         &:hover {
