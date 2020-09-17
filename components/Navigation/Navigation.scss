@@ -1,0 +1,151 @@
+@import "../../styles/variables";
+@import "../../styles/helpers";
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes flyIn {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.navigation {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  .navigation__background {
+    background: $color-black;
+    animation: fadeOut 0.5s forwards;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .navigation__menu {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: -50vw;
+    position: absolute;
+    background: linear-gradient(
+        130deg,
+        rgba($color-black, 0.6) 0%,
+        rgba($color-black, 0.7) 100%
+      ),
+      url("/static/graphics/hero-about.jpg");
+    background-size: cover;
+    background-position: right center;
+    transition: right 0.24s;
+    padding: 128px 48px 48px;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    @media (max-width: 1024px) {
+      width: 60vw;
+      right: -60vw;
+    }
+
+    @media (max-width: 900px) {
+      width: 100vw;
+      right: -100vw;
+    }
+  }
+
+  ul.menu__items {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    list-style: none;
+
+    @media (max-width: 900px) {
+      max-height: 400px;
+    }
+
+    li {
+      text-align: center;
+      margin: 0;
+      cursor: pointer;
+
+      a {
+        font-size: 24px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 10px;
+        width: 100%;
+        padding: 24px;
+        display: block;
+        box-sizing: border-box;
+        transition: color 0.24s;
+        text-decoration: none;
+
+        @media (max-width: 1024px) {
+          font-size: 22px;
+          letter-spacing: 8px;
+        }
+
+        @media (max-width: 900px) {
+          font-size: 18px;
+          letter-spacing: 7px;
+        }
+
+        &:hover {
+          color: $color-red;
+        }
+      }
+    }
+  }
+
+  &.navigation--active {
+    .navigation__background {
+      background: $color-black;
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .navigation__menu {
+      right: 0;
+    }
+
+    ul.menu__items {
+      animation: flyIn 0.5s forwards;
+    }
+  }
+}

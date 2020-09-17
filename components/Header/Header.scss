@@ -11,30 +11,38 @@
   box-sizing: border-box;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 990;
+
+  @media (max-width: 900px) {
+    padding: 32px;
+  }
 
   .header__logo {
     a {
       text-decoration: none;
-
-      &:hover {
-        svg {
-          transform: scale(1.1);
-        }
-      }
+      height: 42px;
     }
 
     svg {
       height: 42px;
       transition: all 0.5s;
 
-      .logo__l {
-        fill: #fff;
+      .logo__text {
+        @media (max-width: 900px) {
+          display: none;
+        }
       }
+    }
+  }
 
-      .logo__d {
-        fill: #fff;
-      }
+  .header__navigation {
+    a {
+      cursor: pointer;
+    }
+
+    svg {
+      height: 42px;
+      transition: all 0.5s;
     }
   }
 }

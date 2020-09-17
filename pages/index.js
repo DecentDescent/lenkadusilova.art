@@ -1,15 +1,17 @@
 import Head from "../components/Head";
+import Preloader from "../components/Preloader";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+import Homepage from "../components/Homepage";
 
 import "../styles/global.scss";
 
 const Index = () => {
   return (
     <main>
+      {/* <Preloader /> */}
       <Head />
       <Header />
-      <Hero />
+      <Homepage />
     </main>
   );
 };
