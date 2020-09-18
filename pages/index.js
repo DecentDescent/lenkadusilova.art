@@ -7,12 +7,12 @@ import "../styles/global.scss";
 
 const Index = () => {
   return (
-    <main>
+    <>
       {/* <Preloader /> */}
       <HeadComponent />
       <Header />
       <Homepage />
-    </main>
+    </>
   );
 };
 
