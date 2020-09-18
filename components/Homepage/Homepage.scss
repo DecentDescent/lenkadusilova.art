@@ -1,2 +1,27 @@
 @import "../../styles/variables";
 @import "../../styles/helpers";
+
+.page--homepage {
+  background: black;
+  background: linear-gradient(
+      130deg,
+      rgba($color-red, 0.7) 0%,
+      rgba($color-red, 0.6) 100%
+    ),
+    url("/static/graphics/hero-homepage.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  .homepage__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 64px 1fr 1fr 64px;
+    grid-template-rows: 128px 1fr 64px;
+  }
+}

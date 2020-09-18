@@ -1,6 +1,18 @@
 @import "../../styles/variables";
 @import "../../styles/helpers";
 
+.page--concerts {
+  background: black;
+  background: linear-gradient(
+      130deg,
+      rgba($color-aqua, 0.7) 0%,
+      rgba($color-red, 0.6) 100%
+    ),
+    url("/static/graphics/hero-about.jpg");
+  background-size: cover;
+  background-position: center right;
+}
+
 @keyframes pulse {
   0% {
     opacity: 0.4;
@@ -14,6 +26,7 @@
     opacity: 0.4;
   }
 }
+
 .concerts__loading {
   width: 100vw;
   height: 100vh;
@@ -33,11 +46,11 @@
 .concert {
   width: 70vw;
   max-width: 900px;
-  margin: 32px auto;
+  margin: 16px auto 0 auto;
   display: grid;
   grid-template-columns: 120px auto 100px;
   border-bottom: 1px solid rgba($color-white, 0.2);
-  padding: 42px;
+  padding: 24px 42px;
   box-sizing: border-box;
   z-index: 999;
 
@@ -47,6 +60,7 @@
 
   &:last-child {
     border: none;
+    margin-bottom: 64px;
   }
 
   @media (max-width: 900px) {
@@ -72,19 +86,10 @@
   }
 
   .concert__description {
-    h2 {
-      font-weight: bold;
-      font-size: 21px;
-      color: $color-white;
-      margin: 0 0 8px 0;
-    }
-
     p {
-      font-size: 14px;
       text-transform: uppercase;
-      font-weight: 300;
       margin: 0;
-      line-height: 1.2;
+      font-size: 14px;
     }
   }
 
@@ -102,14 +107,16 @@
       text-transform: uppercase;
       color: $color-white;
       text-decoration: none;
-      padding: 12px;
-      border-radius: 24px;
+      padding: 12px 12px 8px 12px;
+      border-radius: 16px;
       font-size: 14px;
-      line-height: 1.2;
+      line-height: 1.4;
       border: 1px solid transparent;
+      transition: all 0.24s;
 
       &:hover {
-        border: 1px solid $color-white;
+        border: 1px solid rgba($color-white, 0.4);
+        background: rgba($color-white, 0.1);
       }
     }
   }

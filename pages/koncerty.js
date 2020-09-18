@@ -1,4 +1,4 @@
-import Head from "../components/Head";
+import HeadComponent from "../components/Head";
 import Preloader from "../components/Preloader";
 import Header from "../components/Header";
 import PageConcerts from "../components/Concerts";
@@ -9,8 +9,8 @@ const Index = () => {
   return (
     <main>
       {/* <Preloader /> */}
-      <Head />
-      <Header />
+      <HeadComponent />
+      <Header title="Koncerty" />
       <PageConcerts />
     </main>
   );

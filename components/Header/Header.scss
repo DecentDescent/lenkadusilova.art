@@ -5,15 +5,15 @@
   padding: 52px 64px;
   background: transparent;
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   box-sizing: border-box;
   top: 0;
   left: 0;
   z-index: 990;
 
   @media (max-width: 900px) {
+    grid-template-columns: 64px 1fr 1fr;
     padding: 42px;
   }
 
@@ -27,15 +27,39 @@
       height: 42px;
       transition: all 0.5s;
 
-      .logo__text {
-        @media (max-width: 900px) {
+      &.header__logo--full {
+        display: block;
+        @media (max-width: 1024px) {
           display: none;
+        }
+      }
+
+      &.header__logo--compact {
+        display: none;
+        @media (max-width: 1024px) {
+          display: block;
         }
       }
     }
   }
 
+  .header__title {
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-white;
+    letter-spacing: 6px;
+
+    @media (max-width: 900px) {
+      justify-self: flex-start;
+    }
+  }
+
   .header__navigation {
+    justify-self: flex-end;
+    align-self: center;
     a {
       cursor: pointer;
     }

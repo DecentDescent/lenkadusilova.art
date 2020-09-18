@@ -3,7 +3,7 @@ import Navigation from "../Navigation";
 import styles from "./Header.scss";
 import classnames from "classnames";
 
-export default function Header() {
+export default function Header(props) {
   const [navState, setNavState] = useState(false);
 
   return (
@@ -11,7 +11,7 @@ export default function Header() {
       <header className={styles["header"]}>
         <div className={styles["header__logo"]}>
           <a href="/">
-            <svg viewBox="0 0 291 48">
+            <svg viewBox="0 0 291 48" className={styles["header__logo--full"]}>
               <g fill="#fff" fillRule="evenodd">
                 <path d="m9 0h15c13.254834 0 24 10.84576 24 24.2246829 0 10.4734669-6.5849389 19.3945404-15.8039007 22.7753171l-3.1763909-8.732644c5.1786206-2.1534738 8.8506718-7.2461544 8.9769311-13.2197288l.0033605-.3182634v-1.0093618c0-8.0830993-6.4918711-14.63574591-14.5-14.63574591h-14.5z" />
                 <path d="m9 0v39h14.999l.001 9h-24v-48z" />
@@ -22,7 +22,19 @@ export default function Header() {
                 />
               </g>
             </svg>
+            <svg
+              viewBox="0 0 48 48"
+              className={styles["header__logo--compact"]}
+            >
+              <g fill="#fff" fillRule="evenodd">
+                <path d="m9 0h15c13.254834 0 24 10.84576 24 24.2246829 0 10.4734669-6.5849389 19.3945404-15.8039007 22.7753171l-3.1763909-8.732644c5.1786206-2.1534738 8.8506718-7.2461544 8.9769311-13.2197288l.0033605-.3182634v-1.0093618c0-8.0830993-6.4918711-14.63574591-14.5-14.63574591h-14.5z" />
+                <path d="m9 0v39h14.999l.001 9h-24v-48z" />
+              </g>
+            </svg>
           </a>
+        </div>
+        <div className={styles["header__title"]}>
+          {!navState ? props.title : null}
         </div>
         <div className={styles["header__navigation"]}>
           <a

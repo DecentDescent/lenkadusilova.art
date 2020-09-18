@@ -1,7 +1,7 @@
 import HeadComponent from "../components/Head";
 import Preloader from "../components/Preloader";
 import Header from "../components/Header";
-import Homepage from "../components/Homepage";
+import PageContact from "../components/Contact";
 
 import "../styles/global.scss";
 
@@ -10,8 +10,8 @@ const Index = () => {
     <main>
       {/* <Preloader /> */}
       <HeadComponent />
-      <Header />
-      <Homepage />
+      <Header title="Kontakt" />
+      <PageContact />
     </main>
   );
 };

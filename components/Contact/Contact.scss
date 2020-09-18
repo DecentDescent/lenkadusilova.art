@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+@import "../../styles/helpers";
+
+.page--contact {
+  background: black;
+  background: linear-gradient(
+      130deg,
+      rgba($color-red, 0.9) 0%,
+      rgba($color-aqua, 0.9) 100%
+    ),
+    url("/static/graphics/hero-kontakt.jpg");
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+
+  .contact__container {
+    position: absolute;
+    bottom: 64px;
+    right: 64px;
+    z-index: 1;
+    padding: 64px;
+    width: 40vw;
+    box-sizing: border-box;
+    background-color: rgba($color-black, 0.9);
+
+    @media (max-width: 900px) {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      left: 48px;
+      height: auto;
+      bottom: 48px;
+      right: 48px;
+      overflow: auto;
+      padding: 42px;
+    }
+
+    .container__content {
+      background: black;
+    }
+  }
+}
+
+.contact-box {
+  padding-bottom: 48px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}

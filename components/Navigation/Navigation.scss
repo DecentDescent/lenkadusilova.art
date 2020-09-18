@@ -39,7 +39,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: -1;
 
   .navigation__background {
     background: $color-black;
@@ -112,31 +112,53 @@
         letter-spacing: 7px;
         width: 100%;
         padding: 24px 16px;
-        display: block;
         box-sizing: border-box;
         transition: color 0.24s;
         text-decoration: none;
         line-height: 1.2;
 
+        svg {
+          width: 32px;
+          height: 32px;
+          fill: $color-white;
+          transition: fill 0.24s;
+          vertical-align: top;
+        }
+
         @media (max-width: 1200px) {
           font-size: 28px;
           letter-spacing: 6px;
+
+          svg {
+            width: 28px;
+            height: 28px;
+          }
         }
 
         @media (max-width: 900px) {
           font-size: 21px;
           letter-spacing: 5px;
           text-align: center;
+
+          svg {
+            width: 21px;
+            height: 21px;
+          }
         }
 
         &:hover {
           color: $color-red;
+          svg {
+            fill: $color-red;
+          }
         }
       }
     }
   }
 
   &.navigation--active {
+    z-index: 1;
+
     .navigation__background {
       background: $color-black;
       animation: fadeIn 0.5s forwards;
