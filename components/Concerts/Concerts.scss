@@ -5,10 +5,10 @@
   background: black;
   background: linear-gradient(
       130deg,
-      rgba($color-aqua, 0.7) 0%,
-      rgba($color-red, 0.6) 100%
+      rgba($color-aqua, 0.8) 0%,
+      rgba($color-red, 0.9) 100%
     ),
-    url("/static/graphics/hero-about.jpg");
+    url("/static/graphics/hero-concerts.jpg");
   background-size: cover;
   background-position: center right;
 }
@@ -28,8 +28,8 @@
 }
 
 .concerts__loading {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   display: flex;
   align-items: center;
@@ -44,7 +44,7 @@
 }
 
 .concert {
-  width: 70vw;
+  width: 70%;
   max-width: 900px;
   margin: 16px auto 0 auto;
   display: grid;
@@ -55,12 +55,12 @@
   z-index: 999;
 
   &:first-child {
-    margin-top: 128px;
+    margin-top: 148px;
   }
 
   &:last-child {
     border: none;
-    margin-bottom: 64px;
+    margin-bottom: 128px;
   }
 
   @media (max-width: 900px) {

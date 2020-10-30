@@ -1,18 +1,18 @@
 import HeadComponent from "../components/Head";
 import Preloader from "../components/Preloader";
 import Header from "../components/Header";
-import PageContact from "../components/Contact";
+import PageAbout from "../components/About";
 
 import "../styles/global.scss";
 
 const Index = () => {
   return (
-    <main>
+    <>
       {/* <Preloader /> */}
-      <HeadComponent title="Kontakt" />
-      <Header title="Kontakt" />
-      <PageContact />
-    </main>
+      <HeadComponent title="O Lence" />
+      <Header title="O Lence" />
+      <PageAbout />
+    </>
   );
 };
 

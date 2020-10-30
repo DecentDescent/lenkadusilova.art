@@ -5,12 +5,12 @@
   background: black;
   background: linear-gradient(
       130deg,
-      rgba($color-red, 0.9) 0%,
-      rgba($color-aqua, 0.9) 100%
+      rgba($color-red, 0.7) 0%,
+      rgba($color-aqua, 0.6) 100%
     ),
-    url("/static/graphics/hero-kontakt.jpg");
+    url("/static/graphics/hero-contact.jpg");
   background-size: cover;
-  background-position: right top;
+  background-position: left top;
   background-repeat: no-repeat;
 
   .contact__container {
@@ -44,8 +44,7 @@
 }
 
 .contact-box {
-  padding-bottom: 48px;
-
+  padding-bottom: 24px;
   &:last-child {
     padding-bottom: 0;
   }

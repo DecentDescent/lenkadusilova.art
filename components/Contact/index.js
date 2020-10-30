@@ -23,12 +23,20 @@ class PageContact extends Component {
           <div className={styles["contact-box"]}>
             <h3>Média</h3>
             <p>
-              Spňa Paleta
+              Zdena Selingerová
               <br />
-              +420 608 923 442
+              +420 602 282 730
               <br />
-              sona@applausebooking.cz
+              zdena.selingerova@gmail.com
             </p>
+          </div>
+
+          <div className={styles["contact-box"]}>
+            <small>
+              Photos: Bet Orten, Adam Holý, Michaela Hermína, Archiv Spitfire
+              Company, M. Hradecký, Martina Mlčúchová, Jan Zrzavý, Zuzana
+              Bönish, klapper.cz
+            </small>
           </div>
         </div>
       </div>

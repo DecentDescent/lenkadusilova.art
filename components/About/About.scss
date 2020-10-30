@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+@import "../../styles/helpers";
+
+.page--about {
+  background: black;
+  background: linear-gradient(
+      130deg,
+      rgba($color-red, 0.8) 0%,
+      rgba($color-aqua, 0.7) 100%
+    ),
+    url("/static/graphics/hero-about.jpg");
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+}

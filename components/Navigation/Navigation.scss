@@ -32,8 +32,8 @@
 }
 
 .navigation {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -61,32 +61,31 @@
     position: absolute;
     background: linear-gradient(
         130deg,
-        rgba($color-black, 0.6) 0%,
-        rgba($color-black, 0.7) 100%
+        rgba($color-black, 0.7) 0%,
+        rgba($color-black, 0.5) 100%
       ),
-      url("/static/graphics/hero-about.jpg");
+      url("/static/graphics/hero-navigation.jpg");
     background-size: cover;
-    background-position: right center;
+    background-position: center bottom;
     transition: right 0.24s;
     padding: 128px 48px 48px;
     box-sizing: border-box;
-    overflow-y: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 
     @media (max-width: 1024px) {
-      width: 60vw;
-      right: -60vw;
+      width: 60%;
+      right: -60%;
     }
 
     @media (max-width: 900px) {
-      width: 100vw;
-      right: -100vw;
+      width: 100%;
+      right: -100%;
     }
   }
 
   ul.menu__items {
     width: 100%;
-    height: 100%;
-    max-height: 500px;
     transform: translateX(100%);
     display: flex;
     flex-direction: column;
@@ -102,7 +101,10 @@
     li {
       text-align: right;
       margin: 0;
+      padding: 20px 0;
       cursor: pointer;
+      flex-shrink: 0;
+      flex-grow: 0;
 
       a {
         font-size: 32px;

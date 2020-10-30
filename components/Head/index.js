@@ -14,6 +14,7 @@ const HeadComponent = (props) => (
       property="og:description"
       content="Žánrově nezařaditelná, charismatická zpěvačka, šestinásobná držitelka výročních hudebních cen Anděl, není zvyklá stagnovat a opakovat se. Stal se z ní mimořádný úkaz české hudební scény, kdy z pozice rockové a popové hvězdy putuje k osobnímu vyjádření, jež svobodně přijímá impulzy z nejrůznějších stylů a mimohudebních zážitků."
     />
+    <meta name="pinterest" content="nopin" />
     <meta property="og:image" content="/static/graphics/og.jpg" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta property="og:type" content="website" />

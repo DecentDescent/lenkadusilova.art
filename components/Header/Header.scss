@@ -51,6 +51,7 @@
     text-transform: uppercase;
     color: $color-white;
     letter-spacing: 6px;
+    line-height: 1.2;
 
     @media (max-width: 900px) {
       justify-self: flex-start;

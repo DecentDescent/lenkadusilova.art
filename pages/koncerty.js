@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <>
       {/* <Preloader /> */}
-      <HeadComponent />
+      <HeadComponent title="Koncerty" />
       <Header title="Koncerty" />
       <PageConcerts />
     </>
