@@ -40,6 +40,7 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+  overflow: hidden;
 
   .navigation__background {
     background: $color-black;
@@ -61,10 +62,10 @@
     position: absolute;
     background: linear-gradient(
         130deg,
-        rgba($color-black, 0.7) 0%,
-        rgba($color-black, 0.5) 100%
+        rgba($color-black, 0.5) 0%,
+        rgba($color-black, 0.4) 100%
       ),
-      url("/static/graphics/hero-navigation.jpg");
+      url("/static/graphics/img-navigation.jpg");
     background-size: cover;
     background-position: center bottom;
     transition: right 0.24s;
@@ -81,6 +82,10 @@
     @media (max-width: 900px) {
       width: 100%;
       right: -100%;
+    }
+
+    @media (max-width: 640px) {
+      padding: 64px 24px 24px;
     }
   }
 

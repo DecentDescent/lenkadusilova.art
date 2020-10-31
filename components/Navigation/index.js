@@ -17,6 +17,9 @@ export default function Navigation(props) {
             <a href="/o-lence">O Lence</a>
           </li>
           <li>
+            <a href="/diskografie">Diskografie</a>
+          </li>
+          <li>
             <a href="/koncerty">Koncerty</a>
           </li>
           <li>
@@ -24,7 +27,7 @@ export default function Navigation(props) {
           </li>
           <li>
             <a
-              href="https://www.supraphonline.cz/umelec/1247-lenka-dusilova"
+              href="https://animalmusic.cz/album/lenka-dusilova-reka-0"
               target="_blank"
             >
               Shop{" "}

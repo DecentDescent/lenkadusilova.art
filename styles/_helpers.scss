@@ -16,4 +16,15 @@
   z-index: 1;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+
+  &.page__container--horizontal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
 }

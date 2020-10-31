@@ -8,7 +8,7 @@ import "../styles/global.scss";
 const Index = () => {
   return (
     <main>
-      {/* <Preloader /> */}
+      <Preloader />
       <HeadComponent title="Kontakt" />
       <Header title="Kontakt" />
       <PageContact />

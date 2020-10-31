@@ -8,7 +8,7 @@ import "../styles/global.scss";
 const Index = () => {
   return (
     <>
-      {/* <Preloader /> */}
+      <Preloader />
       <HeadComponent title="Koncerty" />
       <Header title="Koncerty" />
       <PageConcerts />

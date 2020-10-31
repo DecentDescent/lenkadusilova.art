@@ -6,7 +6,9 @@ class PageContact extends Component {
   render() {
     return (
       <div className={classnames(styles["page"], styles["page--contact"])}>
-        <div className={styles["contact__container"]}>
+        {/* <div className={styles["contact__hero"]}></div>
+
+        <div className={styles["contact__content"]}>
           <div className={styles["contact-box"]}>
             <h3>Management &amp; Booking</h3>
             <p>
@@ -16,7 +18,9 @@ class PageContact extends Component {
               <br />
               +420 774 231 568
               <br />
-              tpaleta@applausebooking.cz
+              <a href="mailto:tpaleta@applausebooking.cz">
+                tpaleta@applausebooking.cz
+              </a>
             </p>
           </div>
 
@@ -27,7 +31,9 @@ class PageContact extends Component {
               <br />
               +420 602 282 730
               <br />
-              zdena.selingerova@gmail.com
+              <a href="mailto:zdena.selingerova@gmail.com">
+                zdena.selingerova@gmail.com
+              </a>
             </p>
           </div>
 
@@ -38,7 +44,7 @@ class PageContact extends Component {
               Bönish, klapper.cz
             </small>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
