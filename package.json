@@ -1,7 +1,7 @@
 {
   "name": "lenkadusilova.art",
   "description": "New website of Lenka Dusilová",
-  "license": "Unlicensed",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next",
     "build": "next build",

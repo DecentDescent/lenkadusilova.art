@@ -48,7 +48,7 @@
   max-width: 900px;
   margin: 16px auto 0 auto;
   display: grid;
-  grid-template-columns: 120px auto 128px;
+  grid-template-columns: 120px auto 42px;
   border-bottom: 1px solid rgba($color-white, 0.2);
   padding: 24px 42px;
   column-gap: 16px;
@@ -65,7 +65,7 @@
   }
 
   @media (max-width: 900px) {
-    grid-template-columns: 80px auto auto;
+    grid-template-columns: 80px auto 42px;
     width: 100%;
     margin: 12px auto;
   }
