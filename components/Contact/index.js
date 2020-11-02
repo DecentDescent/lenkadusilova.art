@@ -6,9 +6,9 @@ class PageContact extends Component {
   render() {
     return (
       <div className={classnames(styles["page"], styles["page--contact"])}>
-        {/* <div className={styles["contact__hero"]}></div>
 
-        <div className={styles["contact__content"]}>
+        <div className={styles["contact__container"]}>
+        <div className={styles["content"]}>
           <div className={styles["contact-box"]}>
             <h3>Management &amp; Booking</h3>
             <p>
@@ -44,7 +44,8 @@ class PageContact extends Component {
               Bönish, klapper.cz
             </small>
           </div>
-        </div> */}
+          </div>
+        </div>
       </div>
     );
   }

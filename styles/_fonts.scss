@@ -44,3 +44,13 @@ small {
   line-height: 1.5;
   color: $color-white;
 }
+
+a {
+  color: $color-white;
+  transition: all 0.24s;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-red;
+  }
+}

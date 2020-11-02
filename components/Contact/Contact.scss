@@ -8,6 +8,45 @@
       rgba($color-red, 0.4) 100%
     ),
     url(/static/graphics/hero-contact.jpg);
-  background-position: center;
+  background-position: top left;
   background-size: cover;
+}
+
+.contact__container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 48px;
+  align-items: flex-end;
+
+  .content {
+    background: rgba(black, 0.95);
+    border-radius: 10px;
+    padding: 48px;
+
+    @media (max-width: 640px) {
+      padding: 24px;
+    }
+
+    .contact-box:first-child h3 {
+      margin-top: 0;
+    }
+
+    h3 {
+      margin-top: 48px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding: 116px 42px 42px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 92px 24px 24px;
+  }
 }

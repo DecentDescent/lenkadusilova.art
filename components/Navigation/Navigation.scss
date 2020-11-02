@@ -50,6 +50,7 @@
     right: 0;
     bottom: 0;
     position: absolute;
+    overflow: hidden;
   }
 
   .navigation__menu {
@@ -71,7 +72,8 @@
     transition: right 0.24s;
     padding: 128px 48px 48px;
     box-sizing: border-box;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
 
     @media (max-width: 1024px) {
