@@ -2,7 +2,7 @@
 @import "../../styles/helpers";
 
 .page--homepage {
-  background: black;
+  background: #070707;
 
   .homepage__container {
     position: absolute;
@@ -11,15 +11,17 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    display: grid;
     box-sizing: border-box;
-    grid-template-columns: 1fr 1fr;
     align-content: center;
     justify-items: center;
     overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 128px 64px 64px;
 
-    @media (max-width: 850px) {
-      grid-template-columns: 1fr;
+    div {
+      width: 100%;
     }
 
     .container__left {
@@ -109,6 +111,48 @@
         @media (max-width: 850px) {
           font-size: 24px;
         }
+      }
+    }
+  }
+}
+
+.video__controls {
+  position: fixed;
+  bottom: 64px;
+  left: 0;
+  right: 0;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+  a {
+    cursor: pointer;
+    color: $color-white;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.24s;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: $color-white;
+      opacity: 0.5;
+      transition: all 0.24s;
+    }
+
+    &:hover {
+      border: 1px solid white;
+      background: rgba($color-white, 0.2);
+
+      svg {
+        opacity: 1;
       }
     }
   }
