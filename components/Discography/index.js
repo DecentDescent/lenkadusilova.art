@@ -43,7 +43,7 @@ class PageDiscography extends Component {
         ],
       },
       {
-        name: "Live at Café v Lese",
+        name: "Live at Café V lese",
         author: "Lenka Dusilová & Baromantika",
         label: "Supraphon a.s.",
         year: "2013",
